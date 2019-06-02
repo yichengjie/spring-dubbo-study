@@ -8,12 +8,7 @@
        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <!--定义了提供方应用信息，用于计算依赖关系；在 dubbo-admin 或 dubbo-monitor 会显示这个名字，方便辨识-->
 	
-	<dubbo:application name="demotest-provider">
-		<dubbo:parameter key="qos.enable" value="true" />
-		<dubbo:parameter key="qos.accept.foreign.ip"
-			value="true" />
-		<dubbo:parameter key="qos.port" value="22222" />
-	</dubbo:application>
+	<dubbo:application name="simple-demo01-provider"  />
  
     <!-- 使用multicast广播注册中心暴露服务地址 -->
     <dubbo:registry address="zookeeper://192.168.99.129:2181" />
