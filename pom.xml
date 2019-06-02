@@ -8,5 +8,6 @@
   	<module>simple-provider01</module>
   	<module>simple-provider02</module>
   	<module>simple-facade</module>
+  	<module>simple-consume01</module>
   </modules>
 </project>

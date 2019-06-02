@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Application {
+public class ApplicationProvider {
 	
 	public static void main(String[] args) throws IOException {
 		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext(
