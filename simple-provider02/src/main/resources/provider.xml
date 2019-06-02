@@ -7,8 +7,9 @@
     <!-- 提供方应用信息，用于计算依赖关系 -->
     <dubbo:application name="simple-demo02-provider"  />
     <!-- 使用multicast广播注册中心暴露服务地址 -->
-    <dubbo:registry address="zookeeper://192.168.199.203:2181" />
+    <dubbo:registry address="${zookeeper.address}" />
     <!-- 用dubbo协议在20880端口暴露服务 -->
     <dubbo:protocol  name="dubbo" port="20880" />
+    
     <dubbo:service interface="com.yicj.study.dubbo.service.UserService" ref="userService" />
 </beans>
