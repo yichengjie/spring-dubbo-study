@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	<!-- 配置自动扫描的包，使其自动注入到IOC容器 -->
+	<context:property-placeholder location="classpath*:dubbo.properties"/>
+	<context:component-scan base-package="com.yicj.study.dubbo" />
+
+	<dubbo:application name="simple-demo01-provider">
+		<dubbo:parameter key="qos.enable" value="true" />
+		<dubbo:parameter key="qos.accept.foreign.ip" value="false" />
+		<dubbo:parameter key="qos.port" value="22222" />
+	</dubbo:application>
+
+	<!-- <dubbo:provider  server="netty4"/> -->
+
+	<!-- 使用multicast广播注册中心暴露服务地址 -->
+	<dubbo:registry address="${zookeeper.address}" />
+	<!-- 用dubbo协议在20880端口暴露服务 -->
+	<dubbo:protocol  name="dubbo" port="20880" />
+	<!-- 声明需要暴露的服务接口 -->
+	<dubbo:service interface="com.yicj.study.dubbo.service.UserService" ref="userService" />
+</beans>
