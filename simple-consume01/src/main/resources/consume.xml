@@ -10,7 +10,7 @@
 	<context:property-placeholder
 		location="classpath*:dubbo.properties" />
 	<!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
-	<dubbo:application name="consumer-of-simple-demo-provider">
+	<dubbo:application name="simple-consume-demo01">
 		<dubbo:parameter key="qos.enable" value="true" />
 		<dubbo:parameter key="qos.accept.foreign.ip" value="false" />
 		<dubbo:parameter key="qos.port" value="33333" />

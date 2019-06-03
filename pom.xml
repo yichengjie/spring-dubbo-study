@@ -10,5 +10,6 @@
   	<module>simple-facade</module>
   	<module>simple-consume01</module>
   	<module>simple-config</module>
+  	<module>simple-consume02</module>
   </modules>
 </project>
