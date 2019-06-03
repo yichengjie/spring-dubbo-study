@@ -6,7 +6,7 @@ import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 
 @Configuration
 @EnableDubbo(scanBasePackages = "com.yicj.study.dubbo.service.impl")
-@PropertySource("classpath:/spring/dubbo-provider.properties")
+@PropertySource({"classpath:dubbo.properties","classpath:/spring/dubbo-provider.properties"})
 public class ProviderConfiguration {
 
 }
