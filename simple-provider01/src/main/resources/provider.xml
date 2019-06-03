@@ -13,6 +13,8 @@
 		<dubbo:parameter key="qos.accept.foreign.ip" value="false" />
 		<dubbo:parameter key="qos.port" value="22222" />
 	</dubbo:application>
+	
+	<!-- <dubbo:provider  server="netty4"/> -->
  
     <!-- 使用multicast广播注册中心暴露服务地址 -->
     <dubbo:registry address="${zookeeper.address}" />
