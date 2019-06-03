@@ -23,7 +23,7 @@
 		<module>simple-config</module>
 		<module>simple-consume02</module>
 		<module>simple-dubbo-common</module>
-		<module>simple-provider-http</module>
+		<module>simple-provider03</module>
 	</modules>
 	
 	<build>
