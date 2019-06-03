@@ -83,6 +83,7 @@
 		</dependency>
 
 
+		<!-- dubbo start -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>dubbo</artifactId>
@@ -94,6 +95,13 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		
+		<dependency>
+		    <groupId>io.netty</groupId>
+		    <artifactId>netty-all</artifactId>
+		    <version>4.1.32.Final</version>
+		</dependency>
+		<!-- dubbo end -->
 
 		<!-- zeekeeper注册中心 -->
 		<dependency>
@@ -125,8 +133,6 @@
 			<version>1.18.4</version>
 			<scope>provided</scope>
 		</dependency>
-		
-		
 		
 	</dependencies>
 
