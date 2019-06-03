@@ -7,7 +7,7 @@
 		<artifactId>spring-dubbo-study</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>simple-provider02</artifactId>
+	<artifactId>simple-provider-http</artifactId>
 
 	<dependencies>
 		<dependency>
@@ -17,11 +17,10 @@
 		</dependency>
 		<!-- dubbo 注解支持 start -->
 		<dependency>
-		    <groupId>com.alibaba.spring</groupId>
-		    <artifactId>spring-context-support</artifactId>
-		    <version>1.0.2</version>
+			<groupId>com.alibaba.spring</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>1.0.2</version>
 		</dependency>
 		<!-- dubbo 注解支持 end -->
 	</dependencies>
-
 </project>
