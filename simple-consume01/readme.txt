@@ -1,0 +1,1 @@
+xml版consume测试
